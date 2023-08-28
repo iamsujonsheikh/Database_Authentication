@@ -1,3 +1,5 @@
+// DATABASE MATCHING AUTHENTICATION.
+
 const express = require('express');
 const app = express();
 const cors = require('cors');
@@ -22,7 +24,6 @@ const userSchema = mongoose.Schema({
 
 // create schema model.
 const User = mongoose.model("users", userSchema);
-
 
 // defined port.
 const port = process.env.PORT || 3000;
